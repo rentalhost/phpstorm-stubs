@@ -632,7 +632,7 @@ function count ($var, $mode = COUNT_NORMAL) {}
 /**
  * Set the internal pointer of an array to its last element
  * @link https://php.net/manual/en/function.end.php
- * @param array &$array <p>
+ * @param array|\ArrayObject &$array <p>
  * The array. This array is passed by reference because it is modified by
  * the function. This means you must pass it a real variable and not
  * a function returning an array because only actual variables may be
@@ -646,7 +646,7 @@ function end (array &$array) {}
 /**
  * Rewind the internal array pointer
  * @link https://php.net/manual/en/function.prev.php
- * @param array &$array <p>
+ * @param array|\ArrayObject &$array <p>
  * The input array.
  * </p>
  * @return mixed the array value in the previous place that's pointed to by
@@ -659,7 +659,7 @@ function prev (array &$array) {}
 /**
  * Advance the internal array pointer of an array
  * @link https://php.net/manual/en/function.next.php
- * @param array &$array <p>
+ * @param array|\ArrayObject &$array <p>
  * The array being affected.
  * </p>
  * @return mixed the array value in the next place that's pointed to by the
@@ -671,7 +671,7 @@ function next (array &$array) {}
 /**
  * Set the internal pointer of an array to its first element
  * @link https://php.net/manual/en/function.reset.php
- * @param array &$array <p>
+ * @param array|\ArrayObject &$array <p>
  * The input array.
  * </p>
  * @return mixed|false the value of the first array element, or false if the array is
@@ -683,7 +683,7 @@ function reset (array &$array) {}
 /**
  * Return the current element in an array
  * @link https://php.net/manual/en/function.current.php
- * @param array $array <p>
+ * @param array|\ArrayObject $array <p>
  * The array.
  * </p>
  * @return mixed The current function simply returns the
@@ -698,7 +698,7 @@ function current (array $array) {}
 /**
  * Fetch a key from an array
  * @link https://php.net/manual/en/function.key.php
- * @param array $array <p>
+ * @param array|\ArrayObject $array <p>
  * The array.
  * </p>
  * @return int|string|null The key function simply returns the
